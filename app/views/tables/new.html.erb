@@ -1,0 +1,5 @@
+<% title new(:table) %>
+
+<%= render 'form' %>
+
+<p><%= link_to view(:table), tables_path if can? :index, @Table %></p>

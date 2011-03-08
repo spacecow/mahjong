@@ -1,0 +1,66 @@
+/* line 10, ../../app/stylesheets/tables.sass */
+form.table li select {
+  width: 90px;
+  float: left;
+}
+
+/* line 14, ../../app/stylesheets/tables.sass */
+div.table_container {
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 17, ../../app/stylesheets/tables.sass */
+div.table_container div.first {
+  background-image: url("/images/characters/1.png");
+}
+/* line 19, ../../app/stylesheets/tables.sass */
+div.table_container div.second {
+  background-image: url("/images/characters/2.png");
+}
+/* line 21, ../../app/stylesheets/tables.sass */
+div.table_container div.third {
+  background-image: url("/images/characters/3.png");
+}
+/* line 23, ../../app/stylesheets/tables.sass */
+div.table_container div.forth {
+  background-image: url("/images/characters/4.png");
+}
+/* line 25, ../../app/stylesheets/tables.sass */
+div.table_container div.fifth {
+  background-image: url("/images/characters/5.png");
+}
+/* line 27, ../../app/stylesheets/tables.sass */
+div.table_container div.sixth {
+  background-image: url("/images/characters/6.png");
+}
+/* line 29, ../../app/stylesheets/tables.sass */
+div.table_container div.seventh {
+  background-image: url("/images/characters/7.png");
+}
+/* line 31, ../../app/stylesheets/tables.sass */
+div.table_container div.eighth {
+  background-image: url("/images/characters/8.png");
+}
+/* line 33, ../../app/stylesheets/tables.sass */
+div.table_container div.ninth {
+  background-image: url("/images/characters/9.png");
+}
+/* line 35, ../../app/stylesheets/tables.sass */
+div.table_container div.table {
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid black;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: #777777 5px 5px 5px 0;
+  -webkit-box-shadow: #777777 5px 5px 5px 0;
+  -o-box-shadow: #777777 5px 5px 5px 0;
+  box-shadow: #777777 5px 5px 5px 0;
+  width: 180px;
+  height: 180px;
+  margin: 0 10px 5px 0;
+}

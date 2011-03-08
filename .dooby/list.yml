@@ -1,0 +1,5 @@
+--- 
+"226246": !ruby/object:Dooby::Task 
+  todo: limit reservations for each table to 4
+2cf42a: !ruby/object:Dooby::Task 
+  todo: show reservation form on index page :doing

@@ -1,0 +1,10 @@
+<% title edit(:table) %>
+
+<%= render 'form' %>
+
+<p>
+  <% if can? :show, @table -%>
+    <%= link_to t(:show), @table %> |
+  <% end %>
+  <%= link_to view(:table), tables_path if can? :index, Table %>
+</p>

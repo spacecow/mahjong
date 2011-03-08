@@ -1,0 +1,43 @@
+@import "compass/css3/border-radius"
+@import "compass/css3/box-shadow"
+
+$table_width: 180px
+$table_height: $table_width
+$select_width: $table_width / 2
+
+form.table
+  li
+    select
+      width: $select_width
+      float: left
+
+div.table_container
+  float: left
+  margin-bottom: 20px
+  div.first
+    background-image: url('/images/characters/1.png')
+  div.second
+    background-image: url('/images/characters/2.png')
+  div.third
+    background-image: url('/images/characters/3.png')
+  div.forth
+    background-image: url('/images/characters/4.png')
+  div.fifth
+    background-image: url('/images/characters/5.png')
+  div.sixth
+    background-image: url('/images/characters/6.png')
+  div.seventh
+    background-image: url('/images/characters/7.png')
+  div.eighth
+    background-image: url('/images/characters/8.png')
+  div.ninth
+    background-image: url('/images/characters/9.png')
+  div.table
+    background-repeat: no-repeat
+    background-position: center center
+    border: 2px solid black
+    +border-radius(10px)
+    +box-shadow(#777,5px,5px,5px)
+    width: $table_width
+    height: $table_height
+    margin: 0 10px 5px 0

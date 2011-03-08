@@ -1,0 +1,15 @@
+<% title "Table" %>
+
+<p>
+  <strong><%= t('formtastic.labels.name') %>:</strong>
+</p>
+
+<p>
+  <% if can? :edit, @table %>
+    <%= link_to t(:edit), edit_table_path(@table) %> |
+  <% end %>
+  <% if can? :delete, @table %>
+    <%= link_to t(:delete), @table, :confirm => 'Are you sure?', :method => :delete %> |
+  <% end %>
+  <%= link_to view(:table), tables_path if can? :index, Table %>
+</p>

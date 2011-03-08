@@ -1,0 +1,12 @@
+<% title pl(:table) %>
+
+<div id="tables">
+  <% @tables.each_with_index do |table,i| %>
+    <%= render table, :order => order(i) %>
+  <% end %>
+</div>
+<div class="clear"></div>
+
+<div id="bottom_links">
+  <%= link_to new(:table), Table.new, :method => :post if can? :new, Table %>
+</div>

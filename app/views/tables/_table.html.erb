@@ -1,0 +1,15 @@
+<div class="table_container">
+  <div class="table <%= order %>">
+    <%= link_to t(:show), table if can? :show, table %>
+    <%= link_to t(:edit), edit_table_path(table) if can? :edit, table %>
+    <%= link_to t(:del), table, :confirm => sure?, :method => :delete if can? :destroy, table %>
+  </div>
+  <div class="reservations">
+    <%= semantic_form_for table do |f| %>
+      <%= f.semantic_fields_for :reservations do |f2| %>
+        <%= f2.input :user, :label => false %>
+      <% end %>
+      <%= f.submit t(:reserve) %>
+    <% end %>
+  </div>
+</div>
