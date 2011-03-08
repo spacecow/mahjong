@@ -19,6 +19,10 @@
       <% end %>
       <div class="clear"></div>
       <div id="contents">
+        <div id="site_nav">
+          <%= link_to view(:table), tables_path %>
+          <%# link_to english? ? "日本ご" : "English", toggle_language_path %>
+        </div>
         <div id="user_nav">
           <% if current_user %>
             <%= t('message.welcome',:user=>current_user.username) %>
@@ -28,6 +32,7 @@
             <%= link_to t(:sign_up), signup_path %><%= t(:or) %><%= link_to t(:log_in), login_path %>
           <% end %>
         </div>
+        <div class="clear"></div>
         <%= content_tag :h1, yield(:title) if show_title? %>
         <%= yield %>
       </div>

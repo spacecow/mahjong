@@ -41,7 +41,7 @@ describe TablesController do
     end
     
     tables_controller_actions.each do |action,req|
-      if %w(new create show index).include?(action)
+      if %w(new create show index edit update).include?(action)
         it "should reach the #{action} page" do
           send("#{req}", "#{action}", :id => @table.id)
           response.redirect_url.should_not eq(root_url)
