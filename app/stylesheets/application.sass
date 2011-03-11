@@ -2,7 +2,7 @@
 @import "compass/css3/gradient"
 
 $spacing: 10px
-$main_width: 900px
+$main_width: 1100px
 $label_width: 150px
 $label_margin: $spacing
 $label_full_width: $label_width + $label_margin
@@ -62,13 +62,17 @@ div#site_nav
   a
     font-size: 100%
 
+//body
+//  background-image: url('/images/sinking_deeper.png')
+//  background-repeat: repeat-y
+
 div#container
   font: normal $font_size "Helvetica Neue", Arial, Helvetica, sans-serif
   width: $main_width
   margin: 4*$spacing auto
   div#contents
-    padding: 2*$spacing 4*$spacing
-    border: 1px solid black
+    padding: 2*$spacing 14*$spacing
+    border: 1px solid white
     +border-radius($spacing)
     +linear-gradient(color-stops(white, $bg_colour 33%, white), left)
     div#user_nav

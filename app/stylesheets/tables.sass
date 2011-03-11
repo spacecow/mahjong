@@ -5,6 +5,8 @@ $table_width: 180px
 $table_height: $table_width
 $select_width: $table_width / 2
 
+$table_border_colour: #9a6837
+
 form.table
   li
     select
@@ -35,9 +37,9 @@ div.table_container
   div.table
     background-repeat: no-repeat
     background-position: center center
-    border: 2px solid black
+    border: 5px solid $table_border_colour
     +border-radius(10px)
-    +box-shadow(#777,5px,5px,5px)
+    +box-shadow(#000,5px,5px,5px)
     width: $table_width
     height: $table_height
     margin: 0 10px 5px 0
